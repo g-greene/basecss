@@ -1,2 +1,2 @@
-# rmdcss
-A base CSS framework for RMD apps
+# basecss
+A base CSS framework for apps
