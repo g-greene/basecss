@@ -336,11 +336,12 @@ hover-rotate-z:hover {
 
 .anim-size-opacity-pulse.run {
   animation-name: keyframes-size-opacity-pulse;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-duration: 700ms;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
+  animation-direction: var(--anim-direction, normal);
+  animation-fill-mode: var(--anim-fill-mode, forwards);
+  animation-duration: var(--anim-duration, 700ms);
+  animation-iteration-count: var(--anim-iteration-count, 1);
+  animation-delay: var(--anim-delay, 0ms);
+  animation-timing-function: var(--anim-timing-function, ease-in);
 }
 
 .anim-bounce-y.run {
