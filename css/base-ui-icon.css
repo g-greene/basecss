@@ -1,0 +1,183 @@
+.icon-empty::before {
+    font-family: "my-icons";	
+    content: "";
+}
+
+.icon-calendar::before {
+    font-family: "my-icons";
+    content: "C";
+}
+
+.icon-gear::before {
+  font-family: "my-icons";
+  content: '"';
+}
+
+.icon-clock::before {
+  font-family: "my-icons";
+  font-weight: bold;
+  content: "@";
+}
+
+.icon-flag::before {
+  font-family: "my-icons";
+  content: "f";
+}
+
+.icon-exchange::before {
+  font-family: "my-icons";
+  content: "x";
+}
+
+.icon-icon-view::before {
+  font-family: "my-icons";
+  content: "4";
+}
+
+.icon-list-view::before {
+  font-family: "my-icons";
+  content: "L";
+}
+
+.icon-view::before {
+  font-family: "my-icons";
+  content: "V";
+}
+
+.icon-lightbulb::before {
+  font-family: "my-icons";
+  content: "i";
+}
+
+.icon-phone::before {
+  font-family: "my-icons";
+  content: "T";
+}
+
+.icon-truck::before {
+  font-family: "my-icons";
+  content: "t";
+}
+
+.icon-globe::before {
+  font-family: "my-icons";
+  content: "g";
+}
+
+.icon-plus::before {
+  font-family: "my-icons";
+  content: "+";
+}
+
+.icon-minus::before {
+  font-family: "my-icons";
+  content: "-";
+}
+
+.icon-mappoint:before {
+  font-family: "my-icons";
+  content: "l";
+}
+
+.icon-heart::before {
+  font-family: "my-icons";
+  content: "h";
+}
+
+.icon-message::before {
+  font-family: "my-icons";
+  content: "m";
+}
+
+.icon-message-ltr::before {
+  font-family: "my-icons";
+  content: "m";
+}
+
+.icon-message-rtl::before {
+  font-family: "my-icons";
+  content: "n";
+}
+
+.icon-megaphone::before {
+  font-family: "my-icons";
+  content: "p";
+}
+
+.icon-pencil::before {
+  font-family: "my-icons";
+  content: "u";
+}
+
+.icon-pencil-writing::before {
+  font-family: "my-icons";
+  content: "w";
+}
+
+.icon-star::before {
+  font-family: "my-icons";
+  content: "s";
+}
+
+.icon-square-dashed::before {
+  font-family: "my-icons";
+  content: "d";
+}
+
+.button-menu::after {
+  font-family: "my-icons";
+  content: "#";
+}
+
+.button-menu.active::after {
+  font-family: "my-icons";
+  content: "$";
+}
+
+.icon-chart-bar::before {
+  font-family: "my-icons";
+  content: "!";
+  padding:0px 5px;
+}
+
+.icon-chart-line::before {
+  font-family: "my-icons";
+  content: "%";
+  padding:0px 5px;
+}
+
+.icon-circle-checkmark::before {
+  font-family: "my-icons";
+  content: "v";
+  padding:0px 5px;
+}
+
+.icon-arrow-left::after {
+  font-family: "my-icons";
+  content: "<";
+}
+
+.icon-arrow-right::after {
+  font-family: "my-icons";
+  content: ">";
+}
+
+.icon-document::before {
+  font-family: "my-icons";
+  content: "D";
+}
+
+.icon-document-exchange::before {
+  font-family: "my-icons";
+  content: "c";
+}
+
+.icon-magnifier::before {
+  font-family: "my-icons";
+  content: "s";
+}
+
+.icon-pdf::before {
+  font-family: "my-icons";
+  content: "P";
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "my-icons";
+  src: url("../fonts/my-icons.eot?v=0.0.6");
+  src: url("../fonts/my-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/my-icons.woff?v=0.0.6") format("woff"), url("../fonts/my-icons.ttf?v=0.0.6") format("truetype"), url("../fonts/my-icons.svg?v=0.0.6") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
