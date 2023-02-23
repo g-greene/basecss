@@ -113,6 +113,16 @@
     box-sizing: border-box;
 }
 
+.flow-row-reverse {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    width:100%;
+    clear: both;
+    padding: 0em 0em;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
 .flex-row-header{
     display: flex;
     background-color:#eee;
@@ -136,58 +146,56 @@
     box-sizing: border-box;
 }
 
-.flex-row-item {
+.flow-column-reverse {
     display: flex;
+    flex-flow: column-reverse nowrap;
+    width:100%;
+    clear: both;
+    padding: 0.25em 0.75em;
+    box-sizing: border-box;
+}
+
+.flex-row-item {
     flex: 1 1 var(--flex-basis, content);
 }
 
 .flex-row-item-1 {
-    display: flex;
     flex: 1 1 100%;
 }
 
 .flex-row-item-2 {
-    display: flex;
     flex: 1 1 50%;
 }
 
 .flex-row-item-3 {
-    display: flex;
     flex: 1 1 33.333%;
 }
 
 .flex-row-item-4 {
-    display: flex;
     flex: 1 1 25%;
 }
 
 .flex-row-item-5 {
-    display: flex;
     flex: 1 1 20%;
 }
 
 .flex-row-item-6 {
-    display: flex;
     flex: 1 1 16.667%;
 }
 
 .flex-row-item-7 {
-    display: flex;
     flex: 1 1 14.286%;
 }
 
 .flex-row-item-8 {
-    display: flex;
     flex: 1 1 12.5%;
 }
 
 .flex-row-item-9 {
-    display: flex;
     flex: 1 1 11.111%;
 }
 
 .flex-row-item-10 {
-    display: flex;
     flex: 1 1 10%;
 }
 
@@ -274,4 +282,157 @@ p[class*="flex-row-item-"] {
     display: table;
     padding: 1rem;
     box-sizing: border-box;
+}
+
+/* small up */
+@media only screen and (min-width: 451px) {
+}
+
+/* medium up */
+@media only screen and (min-width: 851px) {
+    .flex-column-for-medium-up {
+        flex-flow: column;
+    }
+
+    .flex-row-medium-up {
+        flex-flow: row;
+    }
+}
+
+/* large up */
+@media only screen and (min-width: 1025px) {
+    .flex-column-for-large-up {
+        flex-flow: column;
+    }
+
+    .flex-row-large-up {
+        flex-flow: row;
+    }
+}
+
+/* xlarge up */
+@media only screen and (min-width: 1601px) {
+}
+
+/* xxlarge up */
+@media only screen and (min-width: 2049px) {
+}
+
+/* small down */
+@media only screen and (max-width: 450px) {
+    .flex-item-for-small-down {
+        flex: 90% !important;
+    }
+
+    .flex-row-item-1-for-small-down {
+        flex-basis: 100% !important;
+    }
+    
+    .flex-row-item-2-for-small-down {
+        flex-basis: 50% !important;
+    }
+    
+    .flex-row-item-3-for-small-down {
+        flex-basis: 33.333% !important;
+    }
+    
+    .flex-row-item-4-for-small-down {
+        flex-basis: 25% !important;
+    }
+    
+    .flex-row-item-5-for-small-down {
+        flex-basis: 20% !important;
+    }
+    
+    .flex-row-item-6-for-small-down {
+        flex-basis: 16.667% !important;
+    }
+    
+    .flex-row-item-7-for-small-down {
+        flex-basis: 14.286% !important;
+    }
+    
+    .flex-row-item-8-for-small-down {
+        flex-basis: 12.5% !important;
+    }
+    
+    .flex-row-item-9-for-small-down {
+        flex-basis: 11.111% !important;
+    }
+    
+    .flex-row-item-10-for-small-down {
+        flex-basis: 10% !important;
+    }
+    
+    .flex-column-for-small-down {
+        flex-flow: column;
+    }
+
+    .flex-row-for-small-down {
+        flex-flow: row;
+    }
+}
+
+/* medium down */
+@media only screen and (max-width: 850px) {
+    .flex-row-item-1-for-medium-down {
+        flex-basis: 100% !important;
+    }
+    
+    .flex-row-item-2-for-medium-down {
+        flex-basis: 50% !important;
+    }
+    
+    .flex-row-item-3-for-medium-down {
+        flex-basis: 33.333% !important;
+    }
+    
+    .flex-row-item-4-for-medium-down {
+        flex-basis: 25% !important;
+    }
+    
+    .flex-row-item-5-for-medium-down {
+        flex-basis: 20% !important;
+    }
+    
+    .flex-row-item-6-for-medium-down {
+        flex-basis: 16.667% !important;
+    }
+    
+    .flex-row-item-7-for-medium-down {
+        flex-basis: 14.286% !important;
+    }
+    
+    .flex-row-item-8-for-medium-down {
+        flex-basis: 12.5% !important;
+    }
+    
+    .flex-row-item-9-for-medium-down {
+        flex-basis: 11.111% !important;
+    }
+    
+    .flex-row-item-10-for-medium-down {
+        flex-basis: 10% !important;
+    }
+
+    .flex-column-for-medium-down {
+        flex-flow: column;
+    }
+
+    .flex-row-medium-down {
+        flex-flow: row;
+    }
+
+}
+
+/* large down */
+@media only screen and (max-width: 1024px) {
+}
+
+/* xlarge down */
+@media only screen and (max-width: 1600px) {
+}
+
+/* xxlarge down */
+@media only screen and (max-width: 2048px) {
 }
