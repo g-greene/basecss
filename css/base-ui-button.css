@@ -1,34 +1,32 @@
 /* button */
 
 .button {
-    padding-top: 0.75em;
-    padding-right: 1em;
-    padding-bottom: 0.75em;
-    padding-left: 1em;
+    padding: var(--button-padding, var(--default-button-padding, 0.75em 1em));
+    box-sizing: var(--button-box-sizing, var(--default-button-box-sizing, border-box));
 }
 
 .button-rounded {
-    padding-top: 0.75em;
-    padding-right: 1em;
-    padding-bottom: 0.75em;
-    padding-left: 1em;
-    border-radius: 0.75em;
+    padding: var(--button-rounded-padding, var(--default-button-rounded-padding, 0.75em 1em));
+    box-sizing: var(--button-rounded-box-sizing, var(--default-button-rounded-box-sizing, border-box));
 }
 
 .button-circle {
-    padding: 1em;
-    border-radius: var(--button-circle-border-radius, 50em);
+    padding: var(--button-circle-padding, var(--default-circle-padding, 1em));
+    border-radius: var(--button-circle-border-radius, var(--default-circle-border-radius, 50em));
+    box-sizing: var(--button-circle-box-sizing, var(--default-button-circle-box-sizing, border-box));
 }
 
 .button-pianokey {
-    height: 5em;
-    padding: 1em;
-    border-radius: var(--button-circle-border-radius, 50em);
+    height: var(--button-pianokey-height, 5em);
+    padding: var(--button-pianokey-padding, var(--default-pianokey-padding, 1em));
+    border-radius: var(--button-pianokey-border-radius, var(--default-pianokey-border-radius, 50em));
+    box-sizing: var(--button-pianokey-box-sizing, var(--default-button-pianokey-box-sizing, border-box));
 }
 
 .button-leaf {
-    padding: 1em;
-    border-radius: 0.25em 1em;
+    padding: var(--button-leaf-padding, var(--default-leaf-padding, 1em));
+    border-radius: var(--button-leaf-border-radius, var(--default-leaf-border-radius, 0.25em 1em));
+    box-sizing: var(--button-leaf-box-sizing, var(--default-button-leaf-box-sizing, border-box));
 }
 
 .button,
@@ -36,50 +34,56 @@
 .button-circle,
 .button-pianokey,
 .button-leaf {
-    display: inline-flex;
-    position: relative;
+    display: var(--button-display, var(--default-button-display, inline-flex));
+    position: var(--button-position, var(--default-button-position, relative));
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", Arial, serif;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
+    font-family: var(--button-font-family, var(--default-button-font-family, "Montserrat", Arial, serif));
+    font-weight: var(--button-font-weight, var(--default-button-font-weight, 700));
+    line-height: var(--button-line-height, var(--default-button-line-height, normal));
+    text-decoration: var(--button-text-decoration, var(--default-button-text-decoration, none));
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: var(--button-text-transform, var(--default-button-text-transform, 700));
+    letter-spacing: var(--button-letter-spacing, var(--default-button-letter-spacing, 0.125em));
     white-space: nowrap;
-    font-size: 1rem;
-    background-color: #0089cf;
-    color: #fff;
-    -webkit-transition: background-color 300ms ease-out;
-    -moz-transition: background-color 300ms ease-out;
-    transition: background-color 300ms ease-out;
+    font-size: var(--button-font-size, var(--default-button-font-size, 1rem));
+    background-color: var(--button-background-color, var(--default-button-background-color, #0089cf));
+    color: var(--button-color, var(--default-button-color, #ffffff));
+    -webkit-transition-property: background-color; 
+    -webkit-transition-duration: var(--button-transition-duration, var(--default-button-transition-duration, 300ms));
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: background-color; 
+    -moz-transition-duration: var(--button-transition-duration, var(--default-button-transition-duration, 300ms));
+    -moz-transition-timing-function: ease-out;
+    transition-property: background-color; 
+    transition-duration: var(--button-transition-duration, var(--default-button-transition-duration, 300ms));
+    transition-timing-function: ease-out;
     -webkit-appearance: none;
-    border-style: solid;
-    border-width: 0px;
-    border-color: #5b9bd5;
+    border-style: var(--button-border-style, var(--default-button-border-style, solid));
+    border-width: var(--button-border-width, var(--default-button-border-width, 0px));
+    border-color: var(--button-border-color, var(--default-button-border-color, #5b9bd5));
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 .button-rounded:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 
 .button-circle:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 .button-pianokey:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 .button-leaf:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 /* button swap */
@@ -102,11 +106,11 @@
     font-family: "Montserrat", Arial, serif;
     font-weight: 700;
     font-size: 2em;
-    background-color: #0089cf;
-    color: #fff;
+    background-color: var(--button-background-color, var(--default-button-background-color, #0089cf));
+    color: var(--button-color, var(--default-button-color, #ffffff));
     border-style: solid;
     border-width: 0px;
-    border-color: #5b9bd5;
+    border-color: var(--button-border-color, var(--default-button-border-color, #5b9bd5));
     border-radius: 0.25em;
     -webkit-appearance: none;
     text-decoration: none;
@@ -116,7 +120,7 @@
 }
 
 .button-swap.option--buttonize:hover {
-    background-color: #243a82;
+    background-color: var(--button-hover-background-color, var(--default-button-hover-background-color, #243a82));
 }
 
 .button-swap > div,
