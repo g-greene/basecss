@@ -22,8 +22,11 @@
 }
 
 .slider.option--mode-inline {
+  top: 0;
+  height: 85%;
   position: relative;
-  margin: auto;
+  margin: 0rem 0rem;
+  padding: 0em 0em;
 }
 
 .slider > .slider-content {
@@ -313,7 +316,7 @@
 
   .slider-panel {
     width: 95%;
-    min-width: 350px;
+    min-width: 400px;
     max-height: 700px;
     min-height: 250px;
   }
