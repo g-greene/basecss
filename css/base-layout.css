@@ -33,60 +33,130 @@
 
 .site-layout-shift {
   display: grid;
+  position: fixed; /* This does the magic in forcing the grid to resize fully upon column expansion */
   grid-template-areas: 'left top right'
                         'left main right'
                         'left bottom right';
   grid-template-rows: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
-  width: 100%;
+  -width: 100%; /* This disrupts grid resizing on column expansion */
   height: 100%;
   overflow-x: hidden;
   gap: 0em;
   justify-content: center;
 }
 
-.site-layout-shift > div[style*="grid-area:left"] {
+.site-layout-shift > div[style*="grid-area:left"],
+.site-layout-shift > div[style*="grid-area: left"] {
   width: 0px;
+  overflow: hidden;
 }
 
-.site-layout-shift > div[style*="grid-area:right"] {
+.site-layout-shift > div[style*="grid-area:right"],
+.site-layout-shift > div[style*="grid-area: right"] {
   width: 0px;
+  overflow: hidden;
 }
 
-.site-layout-shift > div[style*="grid-area:top"] {
+.site-layout-shift > div[style*="grid-area:top"],
+.site-layout-shift > div[style*="grid-area: top"] {
   height: 0px;
+  overflow: hidden;
 }
 
-.site-layout-shift > div[style*="grid-area:bottom"] {
+.site-layout-shift > div[style*="grid-area:bottom"],
+.site-layout-shift > div[style*="grid-area: bottom"] {
   height: 0px;
+  overflow: hidden;
 }
 
-.site-layout-shift > div[style*="grid-area:main"] {
-  -min-width:100vw; /* stabilizies main's width but causes space on the left */
+.site-layout-shift > div[style*="grid-area:main"],
+.site-layout-shift > div[style*="grid-area: main"] {
+  min-width:100vw; /* stabilizies main's width but causes space on the left */
 }
 
-.option--layout-effects .site-layout-shift > div[style*="grid-area:left"] {
-  -webkit-transition: width 200ms ease-in-out;
-  -moz-transition: width 200ms ease-in-out;
-  transition: width 200ms ease-in-out;
+.option--layout-effects .site-layout-shift > div[style*="grid-area:left"],
+.option--layout-effects .site-layout-shift > div[style*="grid-area: left"] {
+  -webkit-transition-property: width;
+  -webkit-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -webkit-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  -moz-transition-property: width;
+  -moz-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -moz-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  transition-property: width;
+  transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
 }
 
-.option--layout-effects .site-layout-shift > div[style*="grid-area:right"] {
-  -webkit-transition: width 200ms ease-in-out;
-  -moz-transition: width 200ms ease-in-out;
-  transition: width 200ms ease-in-out;
+.option--layout-effects .site-layout-shift > div[style*="grid-area:right"],
+.option--layout-effects .site-layout-shift > div[style*="grid-area: right"] {
+  -webkit-transition-property: width;
+  -webkit-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -webkit-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  -moz-transition-property: width;
+  -moz-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -moz-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  transition-property: width;
+  transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
 }
 
-.option--layout-effects .site-layout-shift > div[style*="grid-area:top"] {
-  -webkit-transition: height 200ms ease-in-out;
-  -moz-transition: height 200ms ease-in-out;
-  transition: height 200ms ease-in-out;
+.option--layout-effects .site-layout-shift > div[style*="grid-area:top"],
+.option--layout-effects .site-layout-shift > div[style*="grid-area: top"] {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -webkit-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  -moz-transition-property: height;
+  -moz-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -moz-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  transition-property: height;
+  transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
 }
 
-.option--layout-effects .site-layout-shift > div[style*="grid-area:bottom"] {
-  -webkit-transition: height 200ms ease-in-out;
-  -moz-transition: height 200ms ease-in-out;
-  transition: height 200ms ease-in-out;
+.option--layout-effects .site-layout-shift > div[style*="grid-area:bottom"],
+.option--layout-effects .site-layout-shift > div[style*="grid-area: bottom"] {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -webkit-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  -moz-transition-property: height;
+  -moz-transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  -moz-transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+
+  transition-property: height;
+  transition-duration: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, 900ms));
+  transition-timing-function: var(--layout-shift-anim-duration, var( --default-layout-shift-anim-duration, cubic-bezier(0.8,-0.27,0.025,1.105)));
+}
+
+.mode--layout-shift-left .site-layout-shift > div[style*="grid-area:left"],
+.mode--layout-shift-left .site-layout-shift > div[style*="grid-area: left"] {
+  left: 0;
+  width: 22rem;
+}
+
+.mode--layout-shift-right .site-layout-shift > div[style*="grid-area:right"],
+.mode--layout-shift-right .site-layout-shift > div[style*="grid-area: right"] {
+  right: 0;
+  width: 22rem;
+}
+
+.mode--layout-shift-top .site-layout-shift > div[style*="grid-area:top"],
+.mode--layout-shift-top .site-layout-shift > div[style*="grid-area: top"] {
+  top: 0;
+  height: 12rem;
+}
+
+.mode--layout-shift-bottom .site-layout-shift > div[style*="grid-area:bottom"],
+.mode--layout-shift-bottom .site-layout-shift > div[style*="grid-area: bottom"] {
+  bottom: 0;
+  height: 12rem;
 }
 
 .site-header {
