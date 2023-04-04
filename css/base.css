@@ -148,12 +148,12 @@ p {
 }
 
 .flow-row {
-    flex-flow: row;
+    flex-flow: row !important;
 }
 
 .flow-row-reverse,
 .flex-flow-row-reverse {
-    flex-flow: row-reverse;
+    flex-flow: row-reverse !important;
 }
 
 .flow-column,
