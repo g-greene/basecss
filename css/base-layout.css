@@ -198,7 +198,7 @@
 }
 
 .site-body-container {
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
   min-width: 375px;
   height: 100%;
@@ -221,7 +221,7 @@
 }
 
 .site-container {
-  display: block;
+  display: inline-flex;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
