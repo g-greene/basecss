@@ -148,12 +148,12 @@ p {
 }
 
 .flow-row {
-    flex-flow: row !important;
+    flex-flow: row;
 }
 
 .flow-row-reverse,
 .flex-flow-row-reverse {
-    flex-flow: row-reverse !important;
+    flex-flow: row-reverse;
 }
 
 .flow-column,
@@ -1019,13 +1019,13 @@ p {
 }
 
 .overflow-visible {
-    overflow: visible;
+    overflow: visible !important;
     word-wrap: break-word;
     overflow-wrap: anywhere;
 }
 
 .overflow-hidden {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .scroll {
@@ -1288,6 +1288,10 @@ p {
 {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.moveable {
+    position: var(--moveable-position, fixed);
 }
 
 .clickable {
