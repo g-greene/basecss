@@ -2676,6 +2676,10 @@ p {
         flex-flow: row nowrap;
     }
 
+    .justify-center-for-medium-up {
+        justify-content: center;
+    }
+
     .relative-center-for-medium-up {
         margin-top: calc(50% - var(--relative-center-top-offset, 0rem)) !important;
         margin-left: calc(50% - var(--relative-center-left-offset, 0rem)) !important;
@@ -2950,6 +2954,9 @@ p {
         flex-flow: row nowrap;
     }
 
+    .justify-center-for-large-up {
+        justify-content: center;
+    }
     
     .relative-center-for-large-up {
         margin-top: calc(50% - var(--relative-center-top-offset, 0rem)) !important;
@@ -3086,6 +3093,10 @@ p {
 
     .left-for-xlarge-up {
         float: left;
+    }
+
+    .justify-center-for-xlarge-up {
+        justify-content: center;
     }
 
     .relative-center-for-xlarge-up {
@@ -3471,7 +3482,7 @@ p {
         margin: auto;
     }
 
-    .justify-center-medium-down {
+    .justify-center-for-medium-down {
         justify-content: center;
     }
 
@@ -3925,7 +3936,7 @@ p {
         text-align: right !important;
     }
 
-    .justify-center-small-down {
+    .justify-center-for-small-down {
         justify-content: center;
     }
 
