@@ -50,12 +50,13 @@ body {
 }
 
 .site-header-logo-container {
+    display: inline-flex;
     width: 100%;
     flex: 1 1 100%;
 }
 
 .site-header-logo {
-    display: table;
+    display: inline-flex;
     width: 100%;
     padding: 0rem 1rem;
     box-sizing: border-box;
@@ -66,6 +67,7 @@ body {
 }
 
 .site-header-utility-container {
+    display: inline-flex;
     width: 100%;
     height: auto;
     flex: 1 1 100%;
@@ -94,14 +96,14 @@ body {
 }
 
 .site-header-userinfo-name {
-    display: table;
+    display: inline-block;
     box-sizing: border-box;
     text-align: right;
     white-space: nowrap;
 }
 
 .site-header-userinfo-signout {
-    display: table;
+    display: inline-block;
     box-sizing: border-box;
     text-align: left;
     margin: 0rem 0.5rem;
@@ -137,11 +139,11 @@ body {
 }
 
 .site-footer-title-container {
-    display: table;
+    display: inline-flex;
 }
 
 .site-footer-nav-container {
-    display: table;
+    display: inline-flex;
     font-weight: 700;
 }
 
