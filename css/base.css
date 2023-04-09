@@ -1034,12 +1034,18 @@ p {
     white-space: nowrap;
 }
 
+.wrap,
+.word-wrap,
+.break-spaces {
+    white-space: break-spaces !important;
+}
+
 .break-all {
-    word-break: break-all;
+    word-break: break-all !important;
 }
 
 .keep-all {
-    word-break: keep-all;
+    word-break: keep-all !important;
 }
 
 .left {
