@@ -148,22 +148,22 @@ p {
 }
 
 .flow-row {
-    flex-flow: row;
+    flex-flow: row !important;
 }
 
 .flow-row-reverse,
 .flex-flow-row-reverse {
-    flex-flow: row-reverse;
+    flex-flow: row-reverse !important;
 }
 
 .flow-column,
 .flex-flow-column {
-    flex-flow: column;
+    flex-flow: column !important;
 }
 
 .flow-column-reverse,
 .flex-flow-column-reverse {
-    flex-flow: column-reverse;
+    flex-flow: column-reverse !important;
 }
 
 
@@ -2643,41 +2643,41 @@ p {
     }
 
     .inline-for-medium-up {
-        display: inline;
+        display: inline !important;
     }
 
     .flex-column-for-medium-up,
     .flex-flow-column-medium-up {
-        flex-flow: column;
+        flex-flow: column !important;
     }
 
     .flex-column-wrap-medium-up,
     .flex-flow-column-wrap-medium-up {
-        flex-flow: column wrap;
+        flex-flow: column wrap !important;
     }
 
     .flex-column-nowrap-medium-up,
     .flex-flow-column-nowrap-medium-up {
-        flex-flow: column nowrap;
+        flex-flow: column nowrap !important;
     }
 
     .flex-row-medium-up,
     .flex-flow-row-medium-up {
-        flex-flow: row;
+        flex-flow: row !important;
     }
 
     .flex-row-wrap-medium-up,
     .flex-flow-row-wrap-medium-up {
-        flex-flow: row wrap;
+        flex-flow: row wrap !important;
     }
 
     .flex-row-nowrap-medium-up,
     .flex-flow-row-nowrap-medium-up {
-        flex-flow: row nowrap;
+        flex-flow: row nowrap !important;
     }
 
     .justify-center-for-medium-up {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .relative-center-for-medium-up {
@@ -2921,41 +2921,41 @@ p {
     }
 
     .inline-for-large-up {
-        display: inline;
+        display: inline !important;
     }
 
     .flex-column-for-large-up,
     .flex-flow-column-large-up {
-        flex-flow: column;
+        flex-flow: column !important;
     }
 
     .flex-column-wrap-large-up,
     .flex-flow-column-wrap-large-up {
-        flex-flow: column wrap;
+        flex-flow: column wrap !important;
     }
 
     .flex-column-nowrap-large-up,
     .flex-flow-column-nowrap-large-up {
-        flex-flow: column nowrap;
+        flex-flow: column nowrap !important;
     }
 
     .flex-row-large-up,
     .flex-flow-row-large-up {
-        flex-flow: row;
+        flex-flow: row !important;
     }
 
     .flex-row-wrap-large-up,
     .flex-flow-row-wrap-large-up {
-        flex-flow: row wrap;
+        flex-flow: row wrap !important;
     }
 
     .flex-row-nowrap-large-up,
     .flex-flow-row-nowrap-large-up {
-        flex-flow: row nowrap;
+        flex-flow: row nowrap !important;
     }
 
     .justify-center-for-large-up {
-        justify-content: center;
+        justify-content: center !important;
     }
     
     .relative-center-for-large-up {
@@ -3732,32 +3732,32 @@ p {
 
     .flex-column-for-medium-down,
     .flex-flow-column-medium-down {
-        flex-flow: column;
+        flex-flow: column !important;
     }
 
     .flex-column-wrap-medium-down,
     .flex-flow-column-wrap-medium-down {
-        flex-flow: column wrap;
+        flex-flow: column wrap !important;
     }
 
     .flex-column-nowrap-medium-down,
     .flex-flow-column-nowrap-medium-down {
-        flex-flow: column nowrap;
+        flex-flow: column nowrap !important;
     }
 
     .flex-row-medium-down,
     .flex-flow-row-medium-down {
-        flex-flow: row;
+        flex-flow: row !important;
     }
 
     .flex-row-wrap-medium-down,
     .flex-flow-row-wrap-medium-down {
-        flex-flow: row wrap;
+        flex-flow: row wrap !important;
     }
 
     .flex-row-nowrap-medium-down,
     .flex-flow-row-nowrap-medium-down {
-        flex-flow: row nowrap;
+        flex-flow: row nowrap !important;
     }
 
     .cover-width-100-pct-for-medium-down,
@@ -4193,32 +4193,32 @@ p {
 
     .flex-column-for-small-down,
     .flex-flow-column-for-small-down {
-        flex-flow: column;
+        flex-flow: column !important;
     }
 
     .flex-column-wrap-for-small-down,
     .flex-flow-column-wrap-for-small-down {
-        flex-flow: column wrap;
+        flex-flow: column wrap !important;
     }
 
     .flex-column-nowrap-for-small-down,
     .flex-flow-column-nowrap-for-small-down {
-        flex-flow: column nowrap;
+        flex-flow: column nowrap !important;
     }
 
     .flex-row-for-small-down,
     .flex-flow-row-for-small-down {
-        flex-flow: row;
+        flex-flow: row !important;
     }
 
     .flex-row-wrap-for-small-down,
     .flex-flow-row-wrap-for-small-down {
-        flex-flow: row wrap;
+        flex-flow: row wrap !important;
     }
 
     .flex-row-nowrap-for-small-down,
     .flex-flow-row-nowrap-for-small-down {
-        flex-flow: row nowrap;
+        flex-flow: row nowrap !important;
     }
 
     .cover-width-100-pct-for-small-down,
