@@ -7,27 +7,73 @@
 
 /* animate keyframes (style transitions) */
 .anim-opacity {
-  -webkit-transition: opacity 300ms ease-out;
-  -moz-transition: opacity 300ms ease-out;
-  transition: opacity 300ms ease-out;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: var(--anim-opacity-duration, 300ms);
+  -webkit-transition-timing-function: var(--anim-opacity-timing-function, ease-out);
+
+  -moz-transition-property: opacity;
+  -moz-transition-duration: var(--anim-opacity-duration, 300ms);
+  -moz-transition-timing-function: var(--anim-opacity-timing-function, ease-out);
+
+  transition-property: opacity;
+  transition-duration: var(--anim-opacity-duration, 300ms);
+  transition-timing-function: var(--anim-opacity-timing-function, ease-out);
 }
 
 .anim-width {
-  -webkit-transition: width 300ms ease-out;
-  -moz-transition: width 300ms ease-out;
-  transition: width 300ms ease-out;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: var(--anim-width-duration, 300ms);
+  -webkit-transition-timing-function: var(--anim-width-timing-function, ease-out);
+
+  -moz-transition-property: width;
+  -moz-transition-duration: var(--anim-width-duration, 300ms);
+  -moz-transition-timing-function: var(--anim-width-timing-function, ease-out);
+
+  transition-property: width;
+  transition-duration: var(--anim-width-duration, 300ms);
+  transition-timing-function: var(--anim-width-timing-function, ease-out);
+}
+
+.anim-height {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: var(--anim-height-duration, 300ms);
+  -webkit-transition-timing-function: var(--anim-height-timing-function, ease-out);
+
+  -moz-transition-property: height;
+  -moz-transition-duration: var(--anim-height-duration, 300ms);
+  -moz-transition-timing-function: var(--anim-height-timing-function, ease-out);
+
+  transition-property: height;
+  transition-duration: var(--anim-height-duration, 300ms);
+  transition-timing-function: var(--anim-height-timing-function, ease-out);
 }
 
 .anim-color {
-  -webkit-transition: color 300ms ease-out;
-  -moz-transition: color 300ms ease-out;
-  transition: color 300ms ease-out;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: var(--anim-color-duration, 300ms);
+  -webkit-transition-timing-function: var(--anim-color-timing-function, ease-out);
+
+  -moz-transition-property: color;
+  -moz-transition-duration: var(--anim-color-duration, 300ms);
+  -moz-transition-timing-function: var(--anim-color-timing-function, ease-out);
+
+  transition-property: color;
+  transition-duration: var(--anim-color-duration, 300ms);
+  transition-timing-function: var(--anim-color-timing-function, ease-out);
 }
 
 .anim-background-color {
-  -webkit-transition: background-color 300ms ease-out;
-  -moz-transition: background-color 300ms ease-out;
-  transition: background-color 300ms ease-out;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: var(--anim-background-color-duration, 300ms);
+  -webkit-transition-timing-function: var(--anim-background-color-timing-function, ease-out);
+
+  -moz-transition-property: background-color;
+  -moz-transition-duration: var(--anim-background-color-duration, 300ms);
+  -moz-transition-timing-function: var(--anim-background-color-timing-function, ease-out);
+
+  transition-property: background-color;
+  transition-duration: var(--anim-background-color-duration, 300ms);
+  transition-timing-function: var(--anim-background-color-timing-function, ease-out);
 }
 
 .anim-background-color-pulse
@@ -90,15 +136,24 @@
 .hover-background-color.hovered-all,
 .hover-background-color.hovered-background-color,
 .hover-background-color:hover {
-  background-color: var(--hover-background-color, #ddd);
+  background-color: var(--hover-background-color-color, #ddd) !important;
   transition-duration: var(--hover-background-color-duration, 300ms);
 }
 
 .hover-color.hovered-all,
 .hover-color.hovered-background-color,
 .hover-color:hover {
-  color: var(--hover-color, #ddd);
+  color: var(--hover-color, #ddd) !important; /* colors are set on-the-fly a lot, via the style attribute */
   transition-duration: var(--hover-color-duration, 300ms);
+  transition-timing-function: ease-out;
+}
+
+.hover-saturate.hovered-all,
+.hover-saturate.hovered-saturate,
+.hover-saturate:hover {
+  filter: saturate(var(--hover-saturate, 5));
+  transition-duration: var(--hover-saturate-duration, 300ms);
+  transition-timing-function: ease-out;
 }
 
 .hover-children-background-color > div:not([class~="noanim"]):hover,
@@ -298,8 +353,38 @@
   /* background-image: radial-gradient(circle, #3498db 99%,transparent 100%); */
 }
 
+.hover-border.hovered-all,
+.hover-border.hovered-border,
+.hover-border:hover {
+  border-top-color: var(--hover-border-color, var(--hover-border-top-color,#ddd)) !important;
+  border-bottom-color: var(--hover-border-color, var(--hover-border-bottom-color,#ddd)) !important;
+  border-left-color: var(--hover-border-color, var(--hover-border-left-color,#ddd)) !important;
+  border-right-color: var(--hover-border-color, var(--hover-border-right-color,#ddd)) !important;
+  border-top-width: var(--hover-border-width, var(--hover-border-top-width, 2px)) !important;
+  border-bottom-width: var(--hover-border-width, var(--hover-border-bottom-width, 2px)) !important;
+  border-left-width: var(--hover-border-width, var(--hover-border-left-width, 2px)) !important;
+  border-right-width: var(--hover-border-width, var(--hover-border-right-width, 2px)) !important;
+  border-top-style: var(--hover-border-style, var(--hover-border-top-style, solid)) !important;
+  border-bottom-style: var(--hover-border-style, var(--hover-border-bottom-style, solid)) !important;
+  border-left-style: var(--hover-border-style, var(--hover-border-left-style, solid)) !important;
+  border-right-style: var(--hover-border-style, var(--hover-border-right-style, solid)) !important;
+  transition-duration: var(--hover-border-duration, 300ms);
+  transition-timing-function: ease-out;
+}
+
+.hover-outline.hovered-all,
+.hover-outline.hovered-outline,
+.hover-outline:hover {
+  outline-color: var(--hover-outline-color, var(--hover-outline-default-color,#ddd)) !important;
+  outline-width: var(--hover-outline-width, var(--hover-outline-default-width, 2px)) !important;
+  outline-style: var(--hover-outline-style, var(--hover-outline-default-style, solid)) !important;
+  transition-duration: var(--hover-outline-duration, 300ms);
+  transition-timing-function: ease-out;
+}
+
 /* animation */
-.anim-width.run {
+.anim-width.run,
+.anim-width.run-anim-width {
   animation-name: keyframes-width;
   animation-direction: normal;
   animation-duration: 1.5s;
@@ -309,7 +394,8 @@
   animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
 }
 
-.anim-width-reverse.run {
+.anim-width-reverse.run,
+.anim-width-reverse.run-width-reverse {
   animation-name: keyframes-width;
   animation-direction: alternate;
   animation-duration: 5.5s;
@@ -319,7 +405,8 @@
   animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
 }
 
-.anim.run {
+.anim.run,
+.anim.run-anim {
   --animation-name: keyframes-slide-x;
   animation-name: --animation-name;
   animation-direction: normal;
@@ -329,7 +416,8 @@
   animation-timing-function: ease-in-out;
 }
 
-.anim-rotate.run {
+.anim-rotate.run,
+.anim-rotate.run-anim-rotate {
   animation-name: keyframes-rotate;
   animation-direction: normal;
   animation-duration: 750ms;
@@ -337,27 +425,37 @@
   animation-iteration-count: 1;
 }
 
-.anim-background-color-to-color.run {
+.anim-background-color-to-color.run,
+.anim-background-color-to-color.run-anim-background-color-to-color {
   animation-name: keyframes-background-color-to-color;
   animation-direction: normal;
   animation-fill-mode: forwards;
-  animation-duration: 750ms;
-  animation-timing-function: ease-out;
+  animation-duration: var(--anim-background-color-to-color-duration, 750ms);
+  animation-timing-function: var(--anim-background-color-to-color-timing-function, ease-out);
   animation-iteration-count: 1;
 }
 
-.anim-background-color.run {
-  background-color: var(--anim-background-color, #ddd);
-  transition-duration: var(--anim-duration, 300ms);
+.anim-background-color.run,
+.anim-background-color.run-anim-background-color {
+  background-color: var(--anim-background-color-color, #ddd);
+  transition-duration: var(--anim-background-color-duration, 300ms);
 }
 
-.anim-torque.run {
+.anim-background-color-important.run,
+.anim-background-color-important.run-anim-background-color {
+  background-color: var(--anim-background-color-color, #ddd) !important;
+  transition-duration: var(--anim-background-color-duration, 300ms);
+}
+
+.anim-torque.run,
+.anim-torque.run-anim-torque {
   -webkit-transform: rotate(540deg);
   -moz-transform: rotate(540deg);
   transform: rotate(540deg);
 }
 
-.anim-fidget-rotate.run {
+.anim-fidget-rotate.run,
+.anim-fidget-rotate.run-anim-fidget-rotate {
   animation-name: keyframes-fidget-rotate;
   animation-direction: normal;
   animation-duration: 7.5s;
@@ -366,26 +464,30 @@
   animation-iteration-count: infinite;
 }
 
-.anim-opacity-in.run {
+.anim-opacity-in.run,
+.anim-opacity-in.run-anim-opacity-in {
   animation-name: keyframes-opacity-in;
   animation-direction: normal;
   animation-duration: 1s;
 }
 
-.anim-opacity-out.run {
+.anim-opacity-out.run,
+.anim-opacity-out.run-anim-opacity-out {
   animation-name: keyframes-opacity-out;
   animation-direction: normal;
   animation-duration: 1s;
 }
 
-.anim-opacity-pulse.run {
+.anim-opacity-pulse.run,
+.anim-opacity-pulse.run-anim-opacity-pulse {
   animation-name: keyframes-opacity-pulse;
   animation-direction: normal;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
-.anim-opacity-in-out.run {
+.anim-opacity-in-out.run,
+.anim-opacity-in-out.run-anim-opacity-in-out {
   animation-name: keyframes-opacity-in-out;
   animation-direction: normal;
   animation-duration: var(--anim-duration, 5000ms);
@@ -544,26 +646,21 @@
 
 .anim-slide-left-fade-in.run {
   --slide-x-direction: 1;
-  animation-name: keyframes-slide-x-opacity-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-duration: var(--anim-slide-left-duration, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
+  animation: keyframes-slide-x var(--anim-slide-left-duration, var(--anim-duration, 0.25s)) forwards, keyframes-opacity-in var(--anim-opacity-duration, var(--anim-duration, 1s)) forwards;
+  /* -webkit-animation: keyframes-slide-x-opacity-in 5s forwards, keyframes-opacity-out 5s forwards; */
+  /* animation-name: keyframes-slide-x-opacity-in; */
+  /* animation-direction: normal;
+  /* animation-fill-mode: forwards;
+  animation-duration: var(--anim-slide-left-duration, var(--anim-duration, 0.25s)); */
+  /* animation-iteration-count: 1;
   animation-delay: 0.1s;
   animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
-  -animation-timing-function: ease-in-out;
+  -animation-timing-function: ease-in-out; */
 }
 
 .anim-slide-right-fade-in.run {
   --slide-x-direction: -1;
-  animation-name: keyframes-slide-x-opacity-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-duration: var(--anim-slide-right, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
-  animation-delay: 0.1s;
-  animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
-  -animation-timing-function: ease-in-out;
+  animation: keyframes-slide-x var(--anim-slide-right-duration, var(--anim-duration, 0.25s)) forwards, keyframes-opacity-in var(--anim-opacity-duration, var(--anim-duration, 1s)) forwards;
 }
 
 .anim-expand.run {
@@ -696,22 +793,6 @@
   }
 }
 
-@keyframes keyframes-slide-x-opacity-in {
-  0% {
-    opacity: var(--anim-opacity-start, 0);
-    -webkit-transform: translate(calc(var(--slide-x-start, var(--default-slide-x-start, 0px)) * var(--slide-x-direction, 1) * 1.8), 0px);
-    -moz-transform: translate(calc(var(--slide-x-start, var(--default-slide-x-start, 0px)) * var(--slide-x-direction, 1) * 1.8), 0px);
-    transform: translate(calc(var(--slide-x-start, var(--default-slide-x-start, 0px)) * var(--slide-x-direction, 1) * 1.8), 0px);
-  }
-
-  100% {
-    opacity: var(--anim-opacity-end, 1);
-    -webkit-transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
-    -moz-transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
-    transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
-  }
-}
-
 @keyframes keyframes-slide-x {
   0% {
     -webkit-transform: translate(calc(var(--slide-x-start, var(--default-slide-x-start, 0px)) * var(--slide-x-direction, 1) * 1.8), 0px);
@@ -723,23 +804,6 @@
     -webkit-transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
     -moz-transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
     transform: translate(calc(var(--slide-x-end, 60px) * var(--slide-x-direction, 1)), 0px);
-  }
-}
-
-
-@keyframes keyframes-slide-y-opacity-in {
-  0% {
-    opacity: var(--anim-opacity-start, 0);
-    -webkit-transform: translate(0px, calc(var(--slide-y-start, var(--default-slide-y-start, 0px)) * var(--slide-y-direction, 1) * 1.8));
-    -moz-transform: translate(0px, calc(var(--slide-y-start, var(--default-slide-y-start, 0px)) * var(--slide-y-direction, 1) * 1.8));
-    transform: translate(0px, calc(var(--slide-y-start, var(--default-slide-y-start, 0px)) * var(--slide-y-direction, 1) * 1.8));
-  }
-
-  100% {
-    opacity: var(--anim-opacity-end, 1);
-    -webkit-transform: translate(0px, calc(var(--slide-y-end, 60px) * var(--slide-y-direction, 1)));
-    -moz-transform: translate(0px, calc(var(--slide-y-end, 60px) * var(--slide-y-direction, 1)));
-    transform: translate(0px, calc(var(--slide-y-end, 60px) * var(--slide-y-direction, 1)));
   }
 }
 
