@@ -187,6 +187,14 @@
   box-sizing: border-box;
 }
 
+.site-header-inner {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .site-body {
   display: inline-block;
   grid-area: body;
@@ -198,7 +206,7 @@
 }
 
 .site-body-container {
-  display: inline-flex;
+  display: inline-block;
   width: 100%;
   min-width: 375px;
   height: 100%;
@@ -221,7 +229,7 @@
 }
 
 .site-container {
-  display: inline-flex;
+  display: block;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
