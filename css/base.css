@@ -10358,7 +10358,8 @@ p {
 }
 
 .hd,
-.hide {
+.hide,
+.no-display {
     display: none !important;
 }
 
