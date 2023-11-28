@@ -31,6 +31,7 @@
     --default-button-border-style: solid;
     --default-button-border-width: 0px;
     --default-button-border-color: #5b9bd5;
+    --default-button-border-radius: 0;
 
     --default-button-transition-duration: 300ms;
 
@@ -47,6 +48,8 @@
 
     --default-rule-top-border-color: #ccc;
     --default-rule-bottom-border-color: #ccc;
+    --default-rule-left-border-color: #ccc;
+    --default-rule-right-border-color: #ccc;
 
     --default-z-index: 1000;
 
