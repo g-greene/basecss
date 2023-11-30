@@ -4270,7 +4270,7 @@ p {
     }
 
     .justify-center-for-medium-up {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-medium-up {
@@ -5499,7 +5499,7 @@ p {
     }
 
     .justify-center-for-large-up {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-large-up {
@@ -5737,7 +5737,7 @@ p {
     }
 
     .justify-center-for-xlarge-up {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-xlarge-up {
@@ -5840,7 +5840,7 @@ p {
     }
 
     .justify-center-for-xxlarge-up {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-xxlarge-up {
@@ -7505,7 +7505,7 @@ p {
     }
 
     .justify-center-for-medium-down {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-medium-down {
@@ -10111,7 +10111,7 @@ p {
     }
 
     .justify-center-for-small-down {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .align-items-center-for-small-down {
