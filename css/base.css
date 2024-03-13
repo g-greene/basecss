@@ -260,75 +260,133 @@ p {
     flex-basis: 10% !important;
 }
 
-.flex-item-p5-p {
+.flex-item-p5-p,
+.flex-item-p5-pct {
     flex-basis: 0.5% !important;
 }
 
-.flex-item-1-p {
+.flex-item-1-p,
+.flex-item-1-pct {
     flex-basis: 1% !important;
 }
 
-.flex-item-2p5-p {
+.flex-item-2p5-p,
+.flex-item-2p5-pct {
     flex-basis: 2.5% !important;
 }
 
-.flex-item-5-p {
+.flex-item-5-p,
+.flex-item-5-pct {
     flex-basis: 5% !important;
 }
 
-.flex-item-10-p {
+.flex-item-10-p,
+.flex-item-10-pct {
     flex-basis: 10% !important;
 }
 
-.flex-item-15-p {
+.flex-item-15-p,
+.flex-item-15-pct {
     flex-basis: 15% !important;
 }
 
-.flex-item-20-p {
+.flex-item-20-p,
+.flex-item-20-pct {
+    flex-basis: 20% !important;
+}
+
+.flex-item-25-p,
+.flex-item-25-pct {
     flex-basis: 25% !important;
 }
 
-.flex-item-25-p {
-    flex-basis: 25% !important;
+.flex-item-30-p,
+.flex-item-30-pct {
+    flex-basis: 30% !important;
 }
 
-.flex-item-33-p {
+.flex-item-33-p,
+.flex-item-33-pct {
     flex-basis: 33.333% !important;
 }
 
-.flex-item-50-p {
+.flex-item-35-p,
+.flex-item-35-pct {
+    flex-basis: 35% !important;
+}
+
+.flex-item-40-p,
+.flex-item-40-pct {
+    flex-basis: 40% !important;
+}
+
+.flex-item-45-p,
+.flex-item-45-pct {
+    flex-basis: 45% !important;
+}
+
+.flex-item-50-p,
+.flex-item-50-pct {
     flex-basis: 50% !important;
 }
 
-.flex-item-67-p {
+.flex-item-55-p,
+.flex-item-55-pct {
+    flex-basis: 55% !important;
+}
+
+.flex-item-60-p,
+.flex-item-60-pct {
+    flex-basis: 60% !important;
+}
+
+.flex-item-65-p,
+.flex-item-65-pct {
+    flex-basis: 60% !important;
+}
+
+.flex-item-67-p,
+.flex-item-67-pct {
     flex-basis: 67.667% !important;
 }
 
-.flex-item-70-p {
+.flex-item-70-p,
+.flex-item-70-pct {
     flex-basis: 70% !important;
 }
 
-.flex-item-75-p {
+.flex-item-75-p,
+.flex-item-75-pct {
     flex-basis: 75% !important;
 }
 
-.flex-item-80-p {
+.flex-item-80-p,
+.flex-item-80-pct {
     flex-basis: 80% !important;
 }
 
-.flex-item-90-p {
+.flex-item-85-p,
+.flex-item-85-pct {
+    flex-basis: 85% !important;
+}
+
+.flex-item-90-p,
+.flex-item-90-pct {
     flex-basis: 90% !important;
 }
 
-.flex-item-95-p {
+.flex-item-95-p,
+.flex-item-95-pct {
     flex-basis: 95% !important;
 }
 
-.flex-item-99-p {
+.flex-item-99-p,
+.flex-item-99-pct {
     flex-basis: 99% !important;
 }
 
-.flex-item-100-p {
+.flex-item-100-p,
+.flex-item-100-pct {
     flex-basis: 100% !important;
 }
 
