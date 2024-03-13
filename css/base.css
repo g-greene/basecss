@@ -531,9 +531,49 @@ p {
     width: 85%;
 }
 
+.cover-width-80-pct,
+.cover-width-80-percent {
+    width: 80%;
+}
+
+.cover-width-75-pct
+.cover-width-75-percent {
+    width: 75%;
+}
+
+.cover-width-70-pct
+.cover-width-70-percent {
+    width: 70%;
+}
+
+.cover-width-67-pct
+.cover-width-67-percent {
+    width: 67%;
+}
+
+.cover-width-65-pct
+.cover-width-65-percent {
+    width: 65%;
+}
+
+.cover-width-60-pct
+.cover-width-60-percent {
+    width: 60%;
+}
+
+.cover-width-55-pct
+.cover-width-55-percent {
+    width: 55%;
+}
+
 .cover-width-50-pct
 .cover-width-50-percent {
     width: 50%;
+}
+
+.cover-width-45-pct
+.cover-width-45-percent {
+    width: 45%;
 }
 
 .cover-width-40-pct
@@ -541,14 +581,34 @@ p {
     width: 40%;
 }
 
+.cover-width-35-pct
+.cover-width-35-percent {
+    width: 35%;
+}
+
+.cover-width-33-pct
+.cover-width-33-percent {
+    width: 33%;
+}
+
 .cover-width-30-pct
 .cover-width-30-percent {
     width: 30%;
 }
 
+.cover-width-25-pct
+.cover-width-25-percent {
+    width: 25%;
+}
+
 .cover-width-20-pct
 .cover-width-20-percent {
     width: 20%;
+}
+
+.cover-width-15-pct
+.cover-width-15-percent {
+    width: 15%;
 }
 
 .cover-width-10-pct
@@ -559,6 +619,11 @@ p {
 .cover-width-5-pct
 .cover-width-5-percent {
     width: 5%;
+}
+
+.cover-width-1-pct
+.cover-width-1-percent {
+    width: 1%;
 }
 
 .cover-8x8 {
