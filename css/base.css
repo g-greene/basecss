@@ -2713,6 +2713,10 @@ p {
 }
 
 @media only screen and (min-width: 451px) {
+    .font-size-for-medium-up {
+        font-size: var(--font-size-for-medium-up, 0.85rem) !important;
+    }
+
     .font-xxxxxlg-for-medium-up {
         font-size: 4rem !important;
     }
@@ -3184,6 +3188,10 @@ p {
 }
 
 @media only screen and (min-width: 851px) {
+    .font-size-for-large-up {
+        font-size: var(--font-size-for-large-up, 0.85rem) !important;
+    }
+
     .font-xxxxxlg-for-large-up {
         font-size: 4rem !important;
     }
@@ -3620,6 +3628,10 @@ p {
 }
 
 @media only screen and (min-width: 1025px) {
+    .font-size-for-xlarge-up {
+        font-size: var(--font-size-for-xlarge-up, 0.85rem) !important;
+    }
+
     .padding-md-for-xlarge-up {
         padding: 0.5rem;
     }
@@ -3984,6 +3996,10 @@ p {
 }
 
 @media only screen and (min-width: 2049px) {
+    .font-size-for-xxlarge-up {
+        font-size: var(--font-size-for-xxlarge-up, 0.85rem) !important;
+    }
+
     .hide-for-xxlarge-up {
         display: none !important;
     }
@@ -3994,6 +4010,10 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+    .font-size-for-large-down {
+        font-size: var(--font-size-for-large-down, 0.85rem) !important;
+    }
+
     .font-auto-size {
         font-size: 100%;
     }
@@ -4321,6 +4341,10 @@ p {
 }
 
 @media only screen and (max-width: 1600px) {
+    .font-size-for-xlarge-down {
+        font-size: var(--font-size-for-xlarge-down, 0.85rem) !important;
+    }
+
     .hide-for-xlarge-down {
         display: none !important;
     }
@@ -4331,6 +4355,10 @@ p {
 }
 
 @media only screen and (max-width: 2048px) {
+    .font-size-for-xxlarge-down {
+        font-size: var(--font-size-for-xxlarge-down, 0.85rem) !important;
+    }
+
     .hide-for-xxlarge-down {
         display: none !important;
     }
@@ -4341,6 +4369,10 @@ p {
 }
 
 @media only screen and (max-width: 850px) {
+
+    .font-size-for-medium-down {
+        font-size: var(--font-size-for-medium-down, 0.85rem) !important;
+    }
 
     .font-auto-size {
         font-size: 85%;
@@ -4760,6 +4792,10 @@ p {
 }
 
 @media only screen and (max-width: 450px) {
+
+    .font-size-for-small-down {
+        font-size: var(--font-size-for-small-down, 0.85rem) !important;
+    }
 
     .font-auto-size {
         font-size: 75%;
