@@ -1191,8 +1191,10 @@ p {
     word-break: break-all !important;
 }
 
+.no-word-wrap,
 .keep-all {
     word-break: keep-all !important;
+    white-space: nowrap !important;
 }
 
 .left {
