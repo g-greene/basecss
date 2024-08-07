@@ -216,7 +216,7 @@
   .form-section > .form-label {
     display: block; /* allows text-ellipsis to function */
     width: 0; /* this does all the magic in allowing a flex item to shrink */
-    min-width:0;
+    min-width: 0;
     color: var(--default-form-font-color, #000);
     font-weight: 700;
     line-height: 2.5em;
@@ -309,6 +309,16 @@
     line-height: 2em;
   }
 
+  .input-group > label,
+  .input-group > .form-label,
+  .input-group-row > label,
+  .input-group-row > .form-label,
+  .input-group-compound > label,
+  .input-group-compound > .form-label {
+    width: 100%;
+    flex-basis: 33%;
+  }
+
   .input-group-row.flex-row-item  > label,
   .input-group-row.flex-row-item  > .form-label,
   .input-row.flex-row-item  > label,
@@ -359,7 +369,7 @@
     border-radius: var(--default-input-border-radius, 0px);
     font-size: var(--default-input-font-size, 1em);
     font-family: var(--default-input-font-family, 'Arial', Helvetica, san-serif);
-    padding: var(--default-input-padding, 0.75em 0em);
+    padding: var(--default-input-padding, 0.75em 0.25em);
     color: var(--default-input-font-color, #000);
   }
 
@@ -409,7 +419,7 @@
     border-radius: var(--default-input-border-radius, 0px);
     font-size: var(--default-input-font-size, 1em);
     font-family: var(--default-input-font-family, 'Arial', Helvetica, san-serif);
-    padding: var(--default-input-padding, 0.75em 0em);
+    padding: var(--default-input-padding, 0.75em 0.25em);
     color: var(--default-input-font-color, #000);
   }
 
@@ -424,7 +434,7 @@
     border-radius: var(--default-input-border-radius, 0px);
     font-size: var(--default-input-font-size, 1em);
     font-family: var(--default-input-font-family, 'Arial', Helvetica, san-serif);
-    padding: var(--default-input-group-padding, 0.75em 0em);
+    padding: var(--default-input-group-padding, 0.75em 0.25em);
     color: var(--default-input-font-color, #000);
   }
 
@@ -439,10 +449,23 @@
     border-radius: var(--default-input-border-radius, 0px);
     font-size: var(--default-input-font-size, 1em);
     font-family: var(--default-input-font-family, 'Arial', Helvetica, san-serif);
-    padding: var(--default-input-group-padding, 0.75em 0em);
+    padding: var(--default-input-group-padding, 0.75em 0.25em);
     color: var(--default-input-font-color, #000);
   }
   
+  .input-group select,
+  .input-group input[type=text],
+  .input-group input[type=password],
+  .input-group-row select,
+  .input-group-row input[type=text],
+  .input-group-row input[type=password],
+  .input-group-compound select,
+  .input-group-compound input[type=text],
+  .input-group-compound input[type=password] {
+    width: 100%;
+    flex-basis: 67%;
+  }
+
   .form-body input[type=checkbox],
   .form-section input[type=checkbox],
   .input-group input[type=checkbox] {
