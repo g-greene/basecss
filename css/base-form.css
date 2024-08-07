@@ -24,7 +24,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    min-width: 300px;
+    -min-width: 300px;
     overflow: unset;
     padding: 0rem;
     margin: 0rem;
@@ -42,7 +42,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    min-width: 300px;
+    -min-width: 300px;
     overflow: unset;
     padding: 0rem;
     margin: 0rem;
@@ -53,7 +53,7 @@
     flex-flow: row nowrap;
     grid-area: form-header;
     width: 100%;
-    min-width: 375px;
+    -min-width: 375px;
     padding: 1em 2em;
     box-sizing: border-box;
   }
@@ -235,6 +235,16 @@
     line-height: 2em;
   }
 
+  .input-row > button,
+  .input-row > select,
+  .input-row > label,
+  .input-row > div,
+  .input-row > input[type=text],
+  .input-row > input[type=password],
+  .input-row > input[type=range] {
+    padding:  0.5em 0.25em;
+  }
+
   .input-group-row > button,
   .input-group-row > select,
   .input-group-row > label,
@@ -242,21 +252,14 @@
   .input-group-row > input[type=text],
   .input-group-row > input[type=password],
   .input-group-row > input[type=range],
-  .input-row > button,
-  .input-row > select,
-  .input-row > label,
-  .input-row > div,
-  .input-row > input[type=text],
-  .input-row > input[type=password],
-  .input-row > input[type=range],
   .input-group-compound > button,
   .input-group-compound > select,
   .input-group-compound > label,
   .input-group-compound > div,
   .input-group-compound > input[type=text],
   .input-group-compound > input[type=password],
-  .input-group-compound > input[type=range]  {
-    padding: 0em 0.5em;
+  .input-group-compound > input[type=range] {
+    padding: 0.5em 0.25em;
   }
 
   .input-group-column > button,
@@ -273,24 +276,33 @@
   .input-column > input[type=text],
   .input-column > input[type=password],
   .input-column > input[type=range] {
-    padding: 0.5em 0em;
+    padding: 0.5em 0.25em;
   }
 
   /* makes an input-group-compound act like a row; and rows act like better rows */
+  .input-row > label,
+  .input-row > .form-label,
+  .input-column > label,
+  .input-column > .form-label {
+    display: block; /* allows text-ellipsis to function */
+    width: 0; /* this does all the magic in allowing a flex item to shrink (and not wrap) */
+    min-width: 0;
+    color: var(--default-form-font-color, #000);
+    font-weight: 700;
+    line-height: 2em;
+  }
+
+  /* a group promotes flexibility in scale and line - a form row is rigid; no line breaks */
   .input-group > label,
   .input-group > .form-label,
   .input-group-row > label,
   .input-group-row > .form-label,
-  .input-row > label,
-  .input-row > .form-label,
   .input-group-column > label,
   .input-group-column > .form-label,
-  .input-column > label,
-  .input-column > .form-label,
   .input-group-compound > label,
   .input-group-compound > .form-label {
     display: block; /* allows text-ellipsis to function */
-    width: 0; /* this does all the magic in allowing a flex item to shrink (and not wrap) */
+    width: fit-content;
     min-width: 0;
     color: var(--default-form-font-color, #000);
     font-weight: 700;
@@ -404,7 +416,7 @@
   .input-group select,
   .input-group input[type=text],
   .input-group input[type=password] {
-    -width: 0%; /* needed to allow flex basis to size properly*/
+    width: fit-content; /* scale within its area; allows side-by-side */
     min-width: 0;
     border-style: var(--default-input-border-style, solid);
     border-width: var(--default-input-border-width, 1px);
@@ -419,7 +431,7 @@
   .input-group-compound select,
   .input-group-compound input[type=text],
   .input-group-compound input[type=password] {
-    -width: 0%; /* needed to allow flex basis to size properly*/
+    width: fit-content; /* scale within its area; allows side-by-side */
     min-width: 0;
     border-style: var(--default-input-border-style, solid);
     border-width: var(--default-input-border-width, 1px);
