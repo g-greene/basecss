@@ -3377,6 +3377,10 @@ p {
         display: flex;
         flex-basis: 100% !important;
     }
+
+    .no-border-radius-for-medium-up {
+        border-radius: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 851px) {
@@ -3831,6 +3835,10 @@ p {
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
     }
+
+    .no-border-radius-for-large-up {
+        border-radius: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -4148,6 +4156,54 @@ p {
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
     }
+
+    .overflow-y-scroll-for-xlarge-up {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-xlarge-up {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-xlarge-up {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-xlarge-up {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-xlarge-up {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-xlarge-up {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-xlarge-up {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-xlarge-up {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-xlarge-up {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-xlarge-up {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-xlarge-up {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-xlarge-up {
+        overflow: visible;
+    }
 }
 
 @media only screen and (min-width: 1601px) {
@@ -4221,6 +4277,58 @@ p {
     .cover-width-5-percent-for-xxlarge-up {
         width: 5% !important;
     }
+
+    .overflow-y-scroll-for-xxlarge-up {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-xxlarge-up {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-xxlarge-up {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-xxlarge-up {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-xxlarge-up {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-xxlarge-up {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-xxlarge-up {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-xxlarge-up {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-xxlarge-up {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-xxlarge-up {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-xxlarge-up {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-xxlarge-up {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-xxlarge-up {
+        border-radius: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 2049px) {
@@ -4248,6 +4356,58 @@ p {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    }
+
+    .overflow-y-scroll-for-xxxlarge-up {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-xxxlarge-up {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-xxxlarge-up {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-xxxlarge-up {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-xxxlarge-up {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-xxxlarge-up {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-xxxlarge-up {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-xxxlarge-up {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-xxxlarge-up {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-xxxlarge-up {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-xxxlarge-up {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-xxxlarge-up {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-xxxlarge-up {
+        border-radius: 0px !important;
     }
 }
 
@@ -4674,7 +4834,58 @@ p {
         display: flex;
         flex-basis: 100% !important;
     }
-}
+
+    .overflow-y-scroll-for-large-down {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-large-down {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-large-down {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-large-down {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-large-down {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-large-down {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-large-down {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-large-down {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-large-down {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-large-down {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-large-down {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-large-down {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-large-down {
+        border-radius: 0px !important;
+    }
 
 @media only screen and (max-width: 1600px) {
     .font-size-for-xxlarge-down {
@@ -4693,6 +4904,58 @@ p {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    }
+    
+    .overflow-y-scroll-for-xxlarge-down {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-xxlarge-down {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-xxlarge-down {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-xxlarge-down {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-xxlarge-down {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-xxlarge-down {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-xxlarge-down {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-xxlarge-down {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-xxlarge-down {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-xxlarge-down {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-xxlarge-down {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-xxlarge-down {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-xxlarge-down {
+        border-radius: 0px !important;
     }
 }
 
@@ -4721,6 +4984,58 @@ p {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    }
+        
+    .overflow-y-scroll-for-xxxlarge-down {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-xxxlarge-down {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-xxxlarge-down {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-xxxlarge-down {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-xxxlarge-down {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-xxxlarge-down {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-xxxlarge-down {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-xxxlarge-down {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-xxxlarge-down {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-xxxlarge-down {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-xxxlarge-down {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-xxxlarge-down {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-xxxlarge-down {
+        border-radius: 0px !important;
     }
 }
 
@@ -5246,6 +5561,58 @@ p {
     .cover-width-5-pct-for-medium-down,
     .cover-width-5-percent-for-medium-down {
         width: 5% !important;
+    }
+
+    .overflow-y-scroll-for-medium-down {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-medium-down {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-medium-down {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-medium-down {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-medium-down {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-medium-down {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-medium-down {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-medium-down {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-medium-down {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-medium-down {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-medium-down {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-medium-down {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-medium-down {
+        border-radius: 0px !important;
     }
 }
 
@@ -5820,6 +6187,58 @@ p {
     .cover-width-5-pct-for-small-down,
     .cover-width-5-percent-for-small-down {
         width: 5% !important;
+    }
+
+    .overflow-y-scroll-for-small-down {
+        overflow-y: scroll;
+    }
+
+    .overflow-x-scroll-for-small-down {
+        overflow-x: scroll;
+    }
+
+    .overflow-scroll-for-small-down {
+        overflow: scroll;
+    }
+
+    .overflow-y-auto-for-small-down {
+        overflow-y: auto;
+    }
+
+    .overflow-x-auto-for-small-down {
+        overflow-x: auto;
+    }
+
+    .overflow-auto-for-small-down {
+        overflow: auto;
+    }
+
+    .overflow-y-hidden-for-small-down {
+        overflow-y: hidden;
+    }
+
+    .overflow-x-hidden-for-small-down {
+        overflow-x: hidden;
+    }
+
+    .overflow-hidden-for-small-down {
+        overflow: hidden;
+    }
+
+    .overflow-y-visible-for-small-down {
+        overflow-y: visible;
+    }
+
+    .overflow-x-visible-for-small-down {
+        overflow-x: visible;
+    }
+
+    .overflow-visible-for-small-down {
+        overflow: visible;
+    }
+
+    .no-border-radius-for-small-down {
+        border-radius: 0px !important;
     }
 }
 
