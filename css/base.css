@@ -1290,6 +1290,7 @@ p {
     overflow: hidden !important;
 }
 
+.overflow-scroll,
 .scroll {
     overflow: scroll;
     text-overflow: clip;
@@ -3498,6 +3499,14 @@ p {
         display: block;
     }
 
+    .no-margin-for-large-up {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-large-up {
+        padding: 0px !important;
+    }
+
     .right-for-large-up {
         float: right;
     }
@@ -3841,6 +3850,14 @@ p {
         display: block;
     }
 
+    .no-margin-for-xlarge-up {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-xlarge-up {
+        padding: 0px !important;
+    }
+
     .right-for-xlarge-up {
         float: right;
     }
@@ -4142,6 +4159,14 @@ p {
         display: block;
     }
 
+    .no-margin-for-xxlarge-up {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-xxlarge-up {
+        padding: 0px !important;
+    }
+
     .cover-width-100-pct-for-xxlarge-up,
     .cover-width-100-percent-for-xxlarge-up {
         width: 100% !important;
@@ -4209,6 +4234,14 @@ p {
 
     .show-for-xxxlarge-up {
         display: block;
+    }
+
+    .no-margin-for-xxxlarge-up {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-xxxlarge-up {
+        padding: 0px !important;
     }
 
     .no-shadow-for-xxxlarge-up {
@@ -4676,6 +4709,14 @@ p {
         display: block;
     }
 
+    .no-margin-for-xxxlarge-down {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-xxxlarge-down {
+        padding: 0px !important;
+    }
+
     .no-shadow-for-xxxlarge-down {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
@@ -4946,6 +4987,14 @@ p {
 
     .clear-for-medium-down {
         clear: both;
+    }
+
+    .no-margin-for-medium-down {
+        margin: 0px !important;
+    }
+
+    .no-padding-for-medium-down {
+        padding: 0px !important;
     }
 
     .hide-for-medium-down {
@@ -5488,14 +5537,6 @@ p {
 
     .clear-for-small-down {
         clear: both;
-    }
-
-    .hide-for-small-down {
-        display: none !important;
-    }
-
-    .show-for-small-down {
-        display: block;
     }
 
     .hide-border-for-small-down {
