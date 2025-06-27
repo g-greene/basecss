@@ -1297,6 +1297,10 @@ p {
     white-space: nowrap;
 }
 
+.overflow-auto {
+    overflow: auto;
+}
+
 .wrap,
 .word-wrap,
 .break-spaces {
@@ -6360,3 +6364,4 @@ p {
 .invisible {
     visibility: hidden;
 }
+
