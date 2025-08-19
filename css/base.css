@@ -3382,6 +3382,10 @@ p {
         flex-basis: 100% !important;
     }
 
+    .no-border-for-medium-up {
+        border-width: 0px !important;
+    }
+
     .no-border-radius-for-medium-up {
         border-radius: 0px !important;
     }
@@ -3840,6 +3844,10 @@ p {
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
     }
 
+    .no-border-for-large-up {
+        border-width: 0px !important;
+    }
+
     .no-border-radius-for-large-up {
         border-radius: 0px !important;
     }
@@ -4155,6 +4163,10 @@ p {
         flex-basis: 100% !important;
     }
 
+    .no-border-for-xlarge-up {
+        border-width: 0px !important;
+    }
+
     .no-shadow-for-xlarge-up {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
@@ -4282,6 +4294,10 @@ p {
         width: 5% !important;
     }
 
+    .no-border-for-xxlarge-up {
+        border-width: 0px !important;
+    }
+
     .overflow-y-scroll-for-xxlarge-up {
         overflow-y: scroll;
     }
@@ -4360,6 +4376,10 @@ p {
         -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+    }
+
+    .no-border-for-xxxlarge-up {
+        border-width: 0px !important;
     }
 
     .overflow-y-scroll-for-xxxlarge-up {
@@ -4887,6 +4907,10 @@ p {
         overflow: visible;
     }
 
+    .no-border-for-large-down {
+        border-width: 0px !important;
+    }
+
     .no-border-radius-for-large-down {
         border-radius: 0px !important;
     }
@@ -4957,6 +4981,10 @@ p {
 
     .overflow-visible-for-xxlarge-down {
         overflow: visible;
+    }
+
+    .no-border-for-xxlarge-down {
+        border-width: 0px !important;
     }
 
     .no-border-radius-for-xxlarge-down {
@@ -5037,6 +5065,10 @@ p {
 
     .overflow-visible-for-xxxlarge-down {
         overflow: visible;
+    }
+
+    .no-border-for-xxxlarge-down {
+        border-width: 0px !important;
     }
 
     .no-border-radius-for-xxxlarge-down {
@@ -5614,6 +5646,10 @@ p {
 
     .overflow-visible-for-medium-down {
         overflow: visible;
+    }
+
+    .no-border-for-medium-down {
+        border-width: 0px !important;
     }
 
     .no-border-radius-for-medium-down {
@@ -6242,6 +6278,10 @@ p {
         overflow: visible;
     }
 
+    .no-border-for-small-down {
+        border-width: 0px !important;
+    }
+    
     .no-border-radius-for-small-down {
         border-radius: 0px !important;
     }
