@@ -464,6 +464,24 @@
   animation-iteration-count: infinite;
 }
 
+.anim-buoy-y.run {
+  animation-name: keyframes-buoy-y;
+  animation-direction: normal;
+  animation-duration: var(--anim-buoy-y-duration, var(--anim-duration, 2s));
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.anim-buoy-x.run {
+  animation-name: keyframes-buoy-x;
+  animation-direction: normal;
+  animation-duration: var(--anim-buoy-x-duration, var(--anim-duration, 2s));
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
 .anim-opacity-in.run,
 .anim-opacity-in.run-anim-opacity-in {
   animation-name: keyframes-opacity-in;
@@ -1076,6 +1094,34 @@
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+
+@keyframes keyframes-buoy-y {
+  50% {
+    -webkit-transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * 2.5));
+    -moz-transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * 2.5));
+    transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * 2.5));
+  }
+
+  50% {
+    -webkit-transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * -1.2));
+    -moz-transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * -1.2));
+    transform: translate(0rem, calc(var(--buoy-y-start, var(--default-buoy-y-start, 2rem)) * var(--buoy-y-direction, 1) * -1.2));
+  }
+}
+
+@keyframes keyframes-buoy-x {
+  50% {
+    -webkit-transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * 2.5));
+    -moz-transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * 2.5));
+    transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * 2.5));
+  }
+
+  50% {
+    -webkit-transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * -1.2));
+    -moz-transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * -1.2));
+    transform: translate(0rem, calc(var(--buoy-x-start, var(--default-buoy-x-start, 2rem)) * var(--buoy-x-direction, 1) * -1.2));
   }
 }
 
