@@ -37,56 +37,55 @@
 .anim-height {
   -webkit-transition-property: height;
   -webkit-transition-duration: var(--anim-height-duration, 300ms);
-  -webkit-transition-timing-function: var(--anim-height-timing-function, ease-out);
+  -webkit-transition-timing-function: var(--anim-height-timing-function, var(--transition-timing-function, ease-out));
 
   -moz-transition-property: height;
   -moz-transition-duration: var(--anim-height-duration, 300ms);
-  -moz-transition-timing-function: var(--anim-height-timing-function, ease-out);
+  -moz-transition-timing-function: var(--anim-height-timing-function, var(--transition-timing-function, ease-out));
 
   transition-property: height;
   transition-duration: var(--anim-height-duration, 300ms);
-  transition-timing-function: var(--anim-height-timing-function, ease-out);
+  transition-timing-function: var(--anim-height-timing-function, var(--transition-timing-function, ease-out));
 }
 
 .anim-color {
   -webkit-transition-property: color;
   -webkit-transition-duration: var(--anim-color-duration, 300ms);
-  -webkit-transition-timing-function: var(--anim-color-timing-function, ease-out);
+  -webkit-transition-timing-function: var(--anim-color-timing-function, var(--transition-timing-function, ease-out));
 
   -moz-transition-property: color;
   -moz-transition-duration: var(--anim-color-duration, 300ms);
-  -moz-transition-timing-function: var(--anim-color-timing-function, ease-out);
+  -moz-transition-timing-function: var(--anim-color-timing-function, var(--transition-timing-function, ease-out));
 
   transition-property: color;
   transition-duration: var(--anim-color-duration, 300ms);
-  transition-timing-function: var(--anim-color-timing-function, ease-out);
+  transition-timing-function: var(--anim-color-timing-function, var(--transition-timing-function, ease-out));
 }
 
 .anim-background-color {
   -webkit-transition-property: background-color;
   -webkit-transition-duration: var(--anim-background-color-duration, 300ms);
-  -webkit-transition-timing-function: var(--anim-background-color-timing-function, ease-out);
+  -webkit-transition-timing-function: var(--anim-background-color-timing-function, var(--transition-timing-function, ease-out));
 
   -moz-transition-property: background-color;
   -moz-transition-duration: var(--anim-background-color-duration, 300ms);
-  -moz-transition-timing-function: var(--anim-background-color-timing-function, ease-out);
+  -moz-transition-timing-function: var(--anim-background-color-timing-function, var(--transition-timing-function, ease-out));
 
   transition-property: background-color;
   transition-duration: var(--anim-background-color-duration, 300ms);
-  transition-timing-function: var(--anim-background-color-timing-function, ease-out);
+  transition-timing-function: var(--anim-background-color-timing-function, var(--transition-timing-function, ease-out));
 }
 
-.anim-background-color-pulse
-{
+.anim-background-color-pulse {
     background: linear-gradient(
-      var(--anim-gradient-angle, 90deg), 
-      var(--anim-gradient-color-1, #aaaaaa), 
-      var(--anim-gradient-color-2, #dddddd),
-      var(--anim-gradient-color-3, #aaaaaa));
+      var(--anim-background-color-pulse-angle, var(--anim-gradient-angle, 90deg)), 
+      var(--anim-background-color-pulse-gradient-color-1, var(--anim-gradient-color-1, #aaaaaa)), 
+      var(--anim-background-color-pulse-gradient-color-2, var(--anim-gradient-color-2, #dddddd)),
+      var(--anim-background-color-pulse-gradient-color-3, var(--anim-gradient-color-3, #aaaaaa)));
     background-size: 200% 200%;
     animation-name: keyframes-background-color-pulse;
-    animation-duration: var(--anim-duration, 1200ms);
-    animation-iteration-count: var(--animation-iteration-count, infinite);
+    animation-duration: var(--anim-background-color-pulse-duration, var(--anim-duration, 1200ms));
+    animation-iteration-count: var(--anim-background-color-pulse-iteration-count, var(--animation-iteration-count, infinite));
 }
 
 .anim-torque-clockwise {
@@ -389,7 +388,7 @@
   animation-direction: normal;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-width-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.0s;
   animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
 }
@@ -400,7 +399,7 @@
   animation-direction: alternate;
   animation-duration: 5.5s;
   animation-fill-mode: backwards;
-  animation-iteration-count: 2;
+  animation-iteration-count: var(--anim-width-reverse-iteration-count, var(--anim-iteration-count, 2));
   animation-delay: -1.5s;
   animation-timing-function: cubic-bezier(0.8,-0.27,0.025,1.105);
 }
@@ -411,7 +410,7 @@
   animation-name: --animation-name;
   animation-direction: normal;
   animation-duration: 0.25s;
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-iteration-count, 1);
   animation-delay: 0.1s;
   animation-timing-function: ease-in-out;
 }
@@ -422,7 +421,7 @@
   animation-direction: normal;
   animation-duration: 750ms;
   animation-timing-function: ease-out;
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-rotate-iteration-count, var(--anim-iteration-count, 1));
 }
 
 .anim-background-color-to-color.run,
@@ -432,7 +431,7 @@
   animation-fill-mode: forwards;
   animation-duration: var(--anim-background-color-to-color-duration, 750ms);
   animation-timing-function: var(--anim-background-color-to-color-timing-function, ease-out);
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-background-color-to-color-iteration-count, var(--anim-iteration-count, 1));
 }
 
 .anim-background-color.run,
@@ -468,18 +467,18 @@
   animation-name: keyframes-buoy-y;
   animation-direction: normal;
   animation-duration: var(--anim-buoy-y-duration, var(--anim-duration, 2s));
-  animation-iteration-count: infinite;
+  animation-iteration-count: var(--anim-buoy-y-iteration-count, var(--anim-iteration-count, infinite));
   animation-delay: var(--anim-buoy-y-delay, var(--anim-delay, 0.5s));
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-buoy-y-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-buoy-x.run {
   animation-name: keyframes-buoy-x;
   animation-direction: normal;
   animation-duration: var(--anim-buoy-x-duration, var(--anim-duration, 2s));
-  animation-iteration-count: infinite;
+  animation-iteration-count: var(--anim-buoy-x-iteration-count, var(--anim-iteration-count, infinite));
   animation-delay: var(--anim-buoy-x-delay, var(--anim-delay, 0.5s));
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-buoy-x-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-opacity-in.run,
@@ -501,7 +500,7 @@
   animation-name: keyframes-opacity-pulse;
   animation-direction: normal;
   animation-duration: var(--anim-opacity-pulse-duration, var(--anim-duration, 1s));
-  animation-iteration-count: infinite;
+  animation-iteration-count: var(--anim-opacity-pulse-iteration-count, var(--anim-iteration-count, infinite));
 }
 
 .anim-opacity-in-out.run,
@@ -510,14 +509,14 @@
   animation-direction: normal;
   animation-duration: var(--anim-opacity-in-out-duration, var(--anim-duration, 5000ms));
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: var(--anim-opacity-in-out-iteration-count, var(--anim-iteration-count, infinite));
 }
 
 .anim-size-pulse.run {
   animation-name: keyframes-size-pulse;
   animation-direction: normal;
   animation-duration: var(--anim-size-pulse-duration, var(--anim-duration, 1s));
-  animation-iteration-count: infinite;
+  animation-iteration-count: var(--anim-size-pulse-iteration-count, var(--anim-iteration-count, infinite));
 }
 
 .anim-fade-in.run {
@@ -554,18 +553,18 @@
   animation-name: keyframes-bounce-y;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-y-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-y-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-bounce-y-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-bounce-x.run {
   animation-name: keyframes-bounce-x;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-x-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-x-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-bounce-x-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-bounce-down.run {
@@ -573,7 +572,7 @@
   animation-name: keyframes-bounce-y;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-down-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-down-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
   animation-timing-function: ease-out;
 }
@@ -583,9 +582,9 @@
   animation-name: keyframes-bounce-y;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-up-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-up-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-bounce-up-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-bounce-left.run {
@@ -593,9 +592,9 @@
   animation-name: keyframes-bounce-x;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-left-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-left-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-bounce-left-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-bounce-right.run {
@@ -603,9 +602,9 @@
   animation-name: keyframes-bounce-x;
   animation-direction: normal;
   animation-duration: var(--anim-bounce-right-duration, var(--anim-duration, 3s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-bounce-right-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-bounce-right-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-dart-y.run {
@@ -622,9 +621,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-slide-down-duration, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-slide-down-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: var(--anim-slide-down-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-slide-up.run {
@@ -633,9 +632,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-slide-up-duration, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-slide-up-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-slide-up-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-slide-left.run {
@@ -644,7 +643,7 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-slide-left-duration, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-slide-left-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
   animation-timing-function: var(--anim-slide-left-timing-function, var(--anim-timing-function, cubic-bezier(0.8,-0.27,0.025,1.105)));
   -animation-timing-function: ease-in-out;
@@ -656,7 +655,7 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-slide-right, var(--anim-duration, 0.25s));
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-slide-right-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
   animation-timing-function: var(--anim-slide-right-timing-function, var(--anim-timing-function, cubic-bezier(0.8,-0.27,0.025,1.105)));
   -animation-timing-function: ease-in-out;
@@ -686,9 +685,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-expand-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-expand-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-flip-and-back-x.run {
@@ -696,9 +695,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-duration, 1200ms);
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-flip-and-back-x-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-flip-and-back-x-timing-function, var(--anim-timing-function, ease-in-out));
 }
 
 .anim-flip-and-back-y.run {
@@ -706,9 +705,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-duration, 1200ms);
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-flip-and-back-y-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-flip-and-back-y-timing-function, var(--anim-timing-function, ease-in-out));
 } 
 
 .anim-flip-and-back-z.run {
@@ -716,9 +715,9 @@
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-duration: var(--anim-duration, 1200ms);
-  animation-iteration-count: 1;
+  animation-iteration-count: var(--anim-flip-and-back-z-iteration-count, var(--anim-iteration-count, 1));
   animation-delay: 0.1s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: var(--anim-flip-and-back-z-timing-function, var(--anim-timing-function, ease-in-out));
 } 
 
 /* animate keyframes */
