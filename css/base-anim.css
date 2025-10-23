@@ -1096,15 +1096,15 @@
   }
 
   60% {
-    -webkit-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, 15deg)));
-    -moz-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, 15deg)));
-    transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, 15deg)));
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
   }
 
   80% {
-    -webkit-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
-    -moz-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
-    transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
   }
 
   100% {
