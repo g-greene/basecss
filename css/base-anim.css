@@ -456,7 +456,7 @@
 .anim-fidget-rotate.run,
 .anim-fidget-rotate.run-anim-fidget-rotate {
   animation-name: keyframes-fidget-rotate;
-  animation-direction: normal;
+  animation-direction: var(--anim-fidget-rotate-direction, var(--anim-direction, normal));
   animation-duration: var(--anim-fidget-rotate-duration, var(--anim-duration, 7.5s));
   animation-timing-function: var(--anim-fidget-rotate-timing-function, var(--anim-timing-function, cubic-bezier(0.8,-0.27,0.025,1.105)));
   animation-delay: var(--anim-fidget-rotate-delay, var(--anim-delay, 7s));
@@ -1083,10 +1083,28 @@
     transform: rotate(var(--fidget-rotate-angle-start, var(--default-fidget-rotate-angle-start, 0deg)));
   }
 
-  33% {
-    -webkit-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid, 320deg)));
-    -moz-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid, 320deg)));
-    transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid, 320deg)));
+  20% {
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-1, -30deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-1, -30deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-1, -30deg)));
+  }
+
+  40% {
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-2, 30deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-2, 30deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-2, 30deg)));
+  }
+
+  60% {
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-3, 15deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-3, 15deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-3, 15deg)));
+  }
+
+  80% {
+    -webkit-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
+    -moz-transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
+    transform: rotate(var(--fidget-rotate-angle-mid, var(--default-fidget-rotate-angle-mid-4, -7.5deg)));
   }
 
   100% {
