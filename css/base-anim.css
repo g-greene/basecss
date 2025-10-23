@@ -1089,25 +1089,25 @@
     transform: rotate(var(--fidget-rotate-angle-mid-1, var(--default-fidget-rotate-angle-mid-1, -30deg)));
   }
 
-  40% {
+  33% {
     -webkit-transform: rotate(var(--fidget-rotate-angle-mid-2, var(--default-fidget-rotate-angle-mid-2, 30deg)));
     -moz-transform: rotate(var(--fidget-rotate-angle-mid-2, var(--default-fidget-rotate-angle-mid-2, 30deg)));
     transform: rotate(var(--fidget-rotate-angle-mid-2, var(--default-fidget-rotate-angle-mid-2, 30deg)));
   }
 
-  60% {
+  40% {
     -webkit-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
     -moz-transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
     transform: rotate(var(--fidget-rotate-angle-mid-3, var(--default-fidget-rotate-angle-mid-3, -15deg)));
   }
 
-  80% {
+  45% {
     -webkit-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
     -moz-transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
     transform: rotate(var(--fidget-rotate-angle-mid-4, var(--default-fidget-rotate-angle-mid-4, 7.5deg)));
   }
 
-  100% {
+  48% {
     -webkit-transform: rotate(var(--fidget-rotate-angle-end, var(--default-fidget-rotate-angle-end, 0deg)));
     -moz-transform: rotate(var(--fidget-rotate-angle-end, var(--default-fidget-rotate-angle-end, 0deg)));
     transform: rotate(var(--fidget-rotate-angle-end, var(--default-fidget-rotate-angle-end, 0deg)));
