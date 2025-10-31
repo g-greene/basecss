@@ -17,6 +17,10 @@
     display: block;
 }
 
+.mode--working .working-overlay {
+    display: block;
+}
+
 .mode--menu-radial .modal-overlay {
     display: block;
     background-color: #ffffff77;
